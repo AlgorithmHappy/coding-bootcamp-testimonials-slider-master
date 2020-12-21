@@ -101,6 +101,10 @@ p:last-child span{
     display: none;
 }
 
+@media screen and (max-width: 375px){
+    
+}
+
 .attribution{
     position: fixed;
     width: 350px;
