@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
 
@@ -15,28 +20,73 @@
   </style>
 </head>
 <body>
-  <section>
-    <p>
-      “ I’ve been interested in coding for a while but never taken the jump, until now. 
-      I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
-      excited about the future. ”
-    </p>
-  
-    <p><span>Tanya Sinclair</span> UX Engineer</p>
+  <section id="tanya">
+    <article>
+      <p>
+        “ I’ve been interested in coding for a while but never taken the jump, until now. 
+        I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
+        excited about the future. ”
+      </p>
+    
+      <p><span>Tanya Sinclair</span> UX Engineer</p>
+    </article>
+
+    <div>
+      <img src="images/image-tanya.jpg" alt="">
+      <div class="flechas">
+        <img src="images/icon-prev.svg" alt="">
+        <img src="images/icon-next.svg" alt="">
+      </div>
+    </div>
   </section>
 
-  <section>
-    <p>
-      “ If you want to lay the best foundation possible I’d recommend taking this course. 
-      The depth the instructors go into is incredible. I now feel so confident about 
-      starting up as a professional developer. ”
-    </p>
-    <p><span>John Tarkpor</span> Junior Front-end Developer</p>
+  <section id="john">
+    <article>
+      <p>
+        “ If you want to lay the best foundation possible I’d recommend taking this course. 
+        The depth the instructors go into is incredible. I now feel so confident about 
+        starting up as a professional developer. ”
+      </p>
+      
+      <p><span>John Tarkpor</span> Junior Front-end Developer</p>
+    </article>
+
+    <div>
+      <img src="images/image-john.jpg" alt="">
+      <div class="flechas">
+        <img src="images/icon-prev.svg" alt="">
+        <img src="images/icon-next.svg" alt="">
+      </div>
+    </div>
   </section>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Gerardo Márquez</a>.
   </div>
+
+  <script>
+    window.addEventListener('load', eventos, false);
+
+    function eventos(e){
+      let flechas = document.querySelectorAll('.flechas img');
+
+      for (const iterator of flechas) {
+        iterator.addEventListener('click', cambiar_imagen, false);
+      }
+    }
+
+    function cambiar_imagen(e){
+      let tanya = document.getElementById('tanya');
+      let john = document.getElementById('john');
+      if(tanya.style.display == 'none'){
+        tanya.style.display = 'flex';
+        john.style.display = 'none';
+      } else {
+        tanya.style.display = 'none';
+        john.style.display = 'flex';
+      }
+    }
+  </script>
 </body>
 </html>

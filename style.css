@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    width: 1440px;
+    margin: auto;
+    background: url("images/pattern-curve.svg") 0px 120% no-repeat;
+}
+
+section{
+    display: flex;
+    flex-flow: row wrap;
+    width: 1152px;   
+    margin: auto;
+}
+
+section > div{
+    background: url("images/pattern-bg.svg") center no-repeat;
+    width: 697px;
+    height: 657px;
+    position: relative;
+}
+
+section div img{
+    position: absolute;
+    left: 65px;
+    top: 63px;
+}
+
+article{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 455px;
+    height: 657px;
+}
+
+article::before{
+    content: url("images/pattern-quotes.svg");
+    position: relative;
+    top: 52px;
+    left: 95px;
+}
+
+article p{
+    font-size: 32px;
+    margin: 15px 0 15px 0;
+    color: hsl(240, 38%, 20%);
+    font-weight: 300;
+    width: 631px;
+    z-index: 10;
+}
+
+
+p:last-child{
+    font-size: medium;
+    color: hsl(240, 18%, 77%);
+    font-weight: 500;
+}
+
+p:last-child span{
+    color: hsl(240, 38%, 20%);
+    font-weight: 700;
+}
+
+.flechas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px 25px 25px 25px;
+    left: 120px;
+    top: 580px;
+    background-color: white;
+    position: relative;
+    filter: drop-shadow(30px 0px 50px hsl(240, 38%, 20%));
+}
+
+.flechas img:first-child{
+    position: absolute;
+    left: 12px;
+    top: 17px;
+}
+
+.flechas img:last-child{
+    position: absolute;
+    left: 75px;
+    top: 17px;
+}
+
+#tanya{
+    display: flex;
+}
+
+#john{
+    display: none;
+}
+
+.attribution{
+    position: fixed;
+    width: 350px;
+    bottom: 0px;
+    left: 50%;   
+    margin-left: -150px;
+}
