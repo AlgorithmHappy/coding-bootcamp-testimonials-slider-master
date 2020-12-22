@@ -102,7 +102,91 @@ p:last-child span{
 }
 
 @media screen and (max-width: 375px){
+    body{
+        width: 375px;
+        margin: auto;
+        background: url("images/pattern-curve.svg") 0px 600px no-repeat;
+        background-size: 350px;
+    }
+
+    section{
+        display: block;
+        width: 100vw;
+        position: relative;
+    }
+
+    section > div{
+        display: block;
+        width: 100%;
+        position: relative;
+        bottom: 650px;
+        background: url("images/pattern-bg.svg") 0px 0px no-repeat;
+        background-size: 375px;
+    }
+
+    section div img{
+        position: relative;
+        width: 80%;
+        top: 34px;
+        left: 10%;
+    }
+
+    article p{
+        font-size: 16px;
+        margin: 15px 0 15px 0;
+        color: hsl(240, 38%, 20%);
+        font-weight: 300;
+        width: 375px;
+        z-index: 10;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        position: relative;
+        bottom: 50px;
+    }
+
+    article p span{
+        display: block;
+    }
+
+    .flechas{
+        position: relative;
+        top: 0px;
+        left: 140px;
+    }
+
+    .flechas img:first-child{
+        width: 20px;
+        position: relative;
+        left: -5px;
+        top: 0px;
+    }
     
+    .flechas img:last-child{
+        width: 20px;
+        position: relative;
+        left: 5px;
+        top: 0px;
+    }
+
+    article{
+        display: block;
+        width: 100%;
+        position: relative;
+        top: 400px;
+    }
+
+    article::before{
+        content: "";
+        background-image: url("images/pattern-quotes.svg");
+        background-size: 50px 40px;
+        display: inline-block;
+        width: 50px;
+        height: 40px;
+        position: relative;
+        top: -10px;
+        left: 145px;
+    }
 }
 
 .attribution{
