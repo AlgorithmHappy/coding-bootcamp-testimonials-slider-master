@@ -1,5 +1,5 @@
 # Reto de frontend mentor
-Es un reto hecho para la pagina wwww.frontendmentor.io
+Es un reto hecho para la pagina https://www.frontendmentor.io
 # DEMO
 https://coding-bootcamp-testimonials-slider-master-blue.vercel.app
 # Frontend Mentor - Coding Bootcamp Testimonials Slider
