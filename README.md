@@ -1,3 +1,7 @@
+# Reto de frontend mentor
+Es un reto hecho para la pagina wwww.frontendmentor.io
+# DEMO
+https://coding-bootcamp-testimonials-slider-master-blue.vercel.app
 # Frontend Mentor - Coding Bootcamp Testimonials Slider
 
 ![Design preview for the Coding Bootcamp Testimonials Slider coding challenge](./design/desktop-preview.jpg)
